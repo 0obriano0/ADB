@@ -1,0 +1,1 @@
+openBTC_Marker.bat > openBTC_Marker.log
