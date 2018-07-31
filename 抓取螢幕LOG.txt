@@ -1,6 +1,2 @@
-22:49 厩 地河 眎惩城 拜 ぱΤ璶厩盾
-22:50 厩 地河 眎惩城 礛琎ぱиê琌adb shell uiautomator dump
-22:50 厩 地河 眎惩城 產刚
-22:51 厩 地河 眎惩城 dumpЧぇ穦瞷xml郎 妓рpull out
-22:52 厩 地河 眎惩城 adb pull /sdcard/window_dump.xml ./filename.xml
-22:52 厩 地河 眎惩城 钩硂妓
+adb shell uiautomator dump
+adb pull /sdcard/window_dump.xml C:\Users\0obriano0\Documents\GitHub\ADB\index.xml
