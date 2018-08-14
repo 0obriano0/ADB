@@ -1,0 +1,4 @@
+<node class="android.view.View" bounds="[0,0][1080,72]" selected="false" password="false" long-clickable="false" scrollable="false" focused="false" focusable="false" enabled="true" clickable="false" checked="false" checkable="false" content-desc="" package="com.android.systemui" resource-id="com.android.systemui:id/scrim_behind" text="" index="1"/>
+</node>
+
+<node class="android.widget.FrameLayout" bounds="[0,0][1080,72]" selected="false" password="false" long-clickable="false" scrollable="false" focused="false" focusable="false" enabled="true" clickable="false" checked="false" checkable="false" content-desc="" package="com.android.systemui" resource-id="" text="" index="0">
