@@ -11,6 +11,6 @@ adb shell dumpsys activity
 :start
 @echo [%time:~0,8%] 系統正在嘗試抓取
 adb shell uiautomator dump
-adb pull /sdcard/window_dump.xml C:\Users\0obriano0\Documents\GitHub\ADB\Battery\index.xml
+adb pull /sdcard/window_dump.xml ..\index.xml
 @ping 127.0.0.1 -n 5 -w 1000 > nul
 goto start
