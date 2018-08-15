@@ -12,7 +12,7 @@ static string XML_db_code_name[] = {
 		"checked","checkable","content-desc",
 		"package","resource-id","text","index","end;"};
 
-typedef struct XMLdatabase{          //手機抓出來的NODE基本的資料 
+/*typedef struct XMLdatabase{          //手機抓出來的NODE基本的資料 
 	char* class_name;
 	int bounds[2];
 	bool selected;
@@ -35,7 +35,7 @@ typedef struct XMLdatabase{          //手機抓出來的NODE基本的資料
 
 XMLdb database;
 
-
+*/ 
 
 void get_node(char* st){
 	FILE *fp;
