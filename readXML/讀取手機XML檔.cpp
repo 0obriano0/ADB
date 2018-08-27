@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <iostream>
- 
+#include <stdint.h>
 using namespace std;
 
 static string XML_db_code_name[] = {
@@ -37,6 +37,24 @@ XMLdb database;
 
 */ 
 
+string iso_8859_1_to_utf8(string &str)
+{
+	
+    string strOut;
+    for (string::iterator it = str.begin(); it != str.end(); ++it)
+    {
+        uint8_t ch = *it;
+        if (ch < 0x80) {
+            strOut.push_back(ch);
+        }
+        else {
+            strOut.push_back(0xc0 | ch >> 6);
+            strOut.push_back(0x80 | (ch & 0x3f));
+        }
+    }
+    return strOut;
+}
+
 void get_node(char* st){
 	FILE *fp;
 	
@@ -69,8 +87,9 @@ void get_node(char* st){
 		    				while(marker){
 		    					if((ch = fgetc(fp)) == '"')
 		    						break;
-		    					get_check_text += ch;
+		    						get_check_text += ch;
 		    				}
+							
 		    				if(strlen(check_text.c_str()) <= 9)
 		    					printf("程式抓到參數: %s\t\t索引值: %s\n",check_text.c_str(),get_check_text.c_str());
 		    				else

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <iostream>
+
  
 using namespace std;
 
@@ -35,7 +36,8 @@ static string XML_db_code_name[] = {
 
 XMLdb database;
 
-*/ 
+*/
+
 
 void get_node(char* st){
 	FILE *fp;
